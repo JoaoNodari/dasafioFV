@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
     <title>Desafio 03</title>
 </head>
 <body>
@@ -16,10 +18,14 @@
 
         <div class="formulario">
             <div class="inputs">
-                <input type="text" class="input" name="firstname" id="firstname" placeholder="Nome Completo *">
+                <input type="text" class="input" name="firstname" id="firstname" placeholder="Nome Completo *" >
+                <span class="error-message">campo obrigatório</span>
                 <input type="text" class="input" name="email" id="email" placeholder="Email *">
+                <span class="error-message">campo obrigatório</span>
                 <input type="tel" class="input" name="telefone" id="telefone" placeholder="Telefone *">
+                <span class="error-message">campo obrigatório</span>
                 <textarea name="areaDeTexot" id="areaDeTexto" placeholder="Mensagem *" class="textArea"></textarea>
+                <span class="error-message">campo obrigatório</span>
                 <p>*campos obrigatórios</p>
                 <button class="btn-enviar">Enviar</button>
             </div>

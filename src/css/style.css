@@ -51,6 +51,7 @@ body {
     flex-direction: column;
     width: 258px;
     margin: 0px 20px;
+    position: relative;
 }
 
 .container .formulario .inputs .input {
@@ -58,17 +59,24 @@ body {
     padding: 5px;
     text-transform: capitalize;
     border: 1px solid black;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 15px;
+}
+
+.input::placeholder, .textArea::placeholder {
+    font-weight: 700; 
+    font-size: 13px;
+    font-family: "Roboto", serif;
+    color: #A8A8A8;
 }
 
 .container .formulario .inputs .textArea {
     height: 100px;
-    font-weight: 700;
+    font-weight: 400;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
 }
 
 .container .formulario .inputs p {
@@ -97,5 +105,17 @@ body {
 }
 
 .campoNaoPreenchido {
-    border: 1px solid red !important; 
+    border: 1px solid red !important;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 8px;
+    margin: -13px 0 3px;
+    position: relative;
+}
+
+.campoNaoPreenchido + .error-message {
+    display: block;
 }
