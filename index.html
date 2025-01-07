@@ -9,7 +9,6 @@
 </head>
 <body>
     <main class="container">
-
         <div class="informacoes">
             <h2 class="titulo">FICOU COM DÚVIDA?<br>NOS MANDE UMA MENSAGEM!</h2>
             <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
@@ -17,14 +16,15 @@
 
         <div class="formulario">
             <div class="inputs">
-                <input type="text" name="firstname" id="firstname" placeholder="Nome Completo *">
-                <input type="text" name="email" id="email" placeholder="Email *">
-                <input type="tel" name="telefone" id="telefone" placeholder="Telefone *">
-                <textarea name="areaDeTexot" id="areaDeTexot" placeholder="Mensagem *" class="textArea"></textarea>
+                <input type="text" class="input" name="firstname" id="firstname" placeholder="Nome Completo *">
+                <input type="text" class="input" name="email" id="email" placeholder="Email *">
+                <input type="tel" class="input" name="telefone" id="telefone" placeholder="Telefone *">
+                <textarea name="areaDeTexot" id="areaDeTexto" placeholder="Mensagem *" class="textArea"></textarea>
+                <p>*campos obrigatórios</p>
+                <button class="btn-enviar">Enviar</button>
             </div>
-            <button class="btn-enviar">Enviar</button>
         </div>
-
     </main>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
